@@ -49,7 +49,7 @@
 
 - $ gpg --import private.key
 - $ gpg --list-secret-keys
-- 
+
 
 
 
