@@ -24,4 +24,33 @@
   - comment encByPubKey function as below    
         1.'#'encryptByPubKey(pgp_pub_key, file_to_enc, output_file)
 * run main.py
+
+# Export and Import pgp keys with GPG
+
+### Export public key with GPG
+
+- $ gpg --list-keys
+- $ gpg --export -a keyname > public.asc
+- $ cat public.asc
+
+### Export private key with gpg
+
+- $ gpg --list-keys
+- $ gpg --export-secret-key -a john > private key
+- $ cat private.key
+
+### Import public key with GPG
+
+- $ gpg --list-keys
+- $ gpg --import public.asc
+- $ gpg --list-public-keys
+
+### Import private key with GPG
+
+- $ gpg --import private.key
+- $ gpg --list-secret-keys
+- 
+
+
+
    
