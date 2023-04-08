@@ -1,7 +1,7 @@
 import gnupg
 
 
-def decByPrivKey(priv_key_file, passphrase, enc_file, output_file):
+def decryptByPrivKey(priv_key_file, passphrase, enc_file, output_file):
     gpg = gnupg.GPG()
 
     key_data = open(priv_key_file, 'rb').read()

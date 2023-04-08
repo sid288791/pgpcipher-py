@@ -1,7 +1,7 @@
 import gnupg
 
 
-def encByPubKey(pgp_pub_key, file_to_enc, output_file):
+def encryptByPubKey(pgp_pub_key, file_to_enc, output_file):
     gpg = gnupg.GPG()
 
     with open(pgp_pub_key) as f:

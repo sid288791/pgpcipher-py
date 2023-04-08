@@ -1,6 +1,6 @@
 # This is a sample Python script.
-from openPGP.DecryptionByPrivKey import decByPrivKey
-from openPGP.EncryptionByPubKey import encByPubKey
+from openPGP.DecryptionByPrivKey import decryptByPrivKey
+from openPGP.EncryptionByPubKey import encryptByPubKey
 
 
 # Press Shift+F10 to execute it or replace it with your code.
@@ -19,12 +19,12 @@ if __name__ == '__main__':
     pgp_pub_key = ''
     file_to_enc = ''
     enc_output_file = ''
-    encByPubKey(pgp_pub_key, file_to_enc, enc_output_file)
+    encryptByPubKey(pgp_pub_key, file_to_enc, enc_output_file)
 
     pgp_priv_key = ''
-    phassphrase = ''
+    passphrase = ''
     enc_file = ''
     dec_output_file = ''
-    decByPrivKey(pgp_priv_key, phassphrase, enc_file, dec_output_file)
+    decryptByPrivKey(pgp_priv_key, passphrase, enc_file, dec_output_file)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
