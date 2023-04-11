@@ -27,4 +27,4 @@ if __name__ == '__main__':
     dec_output_file = ''
     decryptByPrivKey(pgp_priv_key, passphrase, enc_file, dec_output_file)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
